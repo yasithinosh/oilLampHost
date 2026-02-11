@@ -33,16 +33,12 @@ export default function Home() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                     style={{
-                        width: '120px', height: '120px', borderRadius: '50%',
-                        background: 'var(--color-card)',
-                        border: '2px solid var(--color-border)',
+                        width: '120px', height: '120px',
                         display: 'flex', alignItems: 'center', justifyContent: 'center',
                         marginBottom: '32px',
-                        boxShadow: 'var(--shadow-glow)',
-                        overflow: 'hidden',
                     }}
                 >
-                    <img src={logo} alt="ATIT Logo" style={{ width: '80%', height: '80%', objectFit: 'contain' }} />
+                    <img src={logo} alt="ATIT Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                 </motion.div>
 
                 {/* Title */}
