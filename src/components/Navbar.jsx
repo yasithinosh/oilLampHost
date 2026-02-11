@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { FaSignOutAlt } from 'react-icons/fa'
+import logo from '../assets/logo.png'
 
 export default function Navbar() {
     const { user, signOut } = useAuth()
@@ -22,10 +23,12 @@ export default function Navbar() {
             borderBottom: '1px solid var(--color-border)',
         }}>
             <Link to="/" style={{
-                fontSize: '18px', fontWeight: 700, letterSpacing: '0.15em', color: '#fff',
+                display: 'flex', alignItems: 'center', gap: '10px',
+                fontSize: '14px', fontWeight: 600, letterSpacing: '0.05em', color: '#fff',
                 textDecoration: 'none',
             }}>
-                ATIT
+                <img src={logo} alt="ATIT" style={{ width: '28px', height: '28px', objectFit: 'contain' }} />
+                ATIT - Association of Technology IT
             </Link>
             <div style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
                 <Link to="/" style={{
