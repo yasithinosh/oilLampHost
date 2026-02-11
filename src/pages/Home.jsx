@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
+import logo from '../assets/logo.png'
 
 export default function Home() {
     return (
@@ -33,13 +34,15 @@ export default function Home() {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     style={{
                         width: '120px', height: '120px', borderRadius: '50%',
-                        background: 'var(--gradient-primary)',
+                        background: 'var(--color-card)',
+                        border: '2px solid var(--color-border)',
                         display: 'flex', alignItems: 'center', justifyContent: 'center',
                         marginBottom: '32px',
                         boxShadow: 'var(--shadow-glow)',
+                        overflow: 'hidden',
                     }}
                 >
-                    <span style={{ color: '#fff', fontSize: '28px', fontWeight: 800, letterSpacing: '0.05em' }}>OLH</span>
+                    <img src={logo} alt="ATIT Logo" style={{ width: '80%', height: '80%', objectFit: 'contain' }} />
                 </motion.div>
 
                 {/* Title */}
@@ -54,7 +57,7 @@ export default function Home() {
                         WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
                     }}
                 >
-                    Oil Lamp Host
+                    Association of Technology IT
                 </motion.h1>
 
                 {/* Subtitle */}

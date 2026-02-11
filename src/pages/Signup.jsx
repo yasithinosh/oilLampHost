@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import logo from '../assets/logo.png'
 
 export default function Signup() {
     const [email, setEmail] = useState('')
@@ -73,12 +74,12 @@ export default function Signup() {
                 <div style={{ textAlign: 'center', marginBottom: '36px' }}>
                     <div style={{
                         width: '56px', height: '56px', borderRadius: '14px',
-                        background: 'var(--gradient-primary)',
+                        background: 'var(--color-surface)',
+                        border: '1px solid var(--color-border)',
                         display: 'flex', alignItems: 'center', justifyContent: 'center',
-                        margin: '0 auto 20px',
-                        boxShadow: 'var(--shadow-glow)',
+                        margin: '0 auto 20px', overflow: 'hidden',
                     }}>
-                        <span style={{ color: '#fff', fontSize: '20px', fontWeight: 800 }}>OL</span>
+                        <img src={logo} alt="ATIT" style={{ width: '80%', height: '80%', objectFit: 'contain' }} />
                     </div>
                     <h2 style={{ margin: 0, fontSize: '22px', fontWeight: 600, letterSpacing: '-0.01em' }}>Create Account</h2>
                     <p style={{ color: 'var(--color-text-muted)', fontSize: '13px', marginTop: '8px' }}>Join us and start hosting</p>

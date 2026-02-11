@@ -25,7 +25,7 @@ export default function Navbar() {
                 fontSize: '18px', fontWeight: 700, letterSpacing: '0.15em', color: '#fff',
                 textDecoration: 'none',
             }}>
-                OIL LAMP HOST
+                ATIT
             </Link>
             <div style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
                 <Link to="/" style={{

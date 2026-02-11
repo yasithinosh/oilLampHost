@@ -46,7 +46,7 @@ export default function Gallery() {
             <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
 
                 {/* Upload Section - Top Left */}
-                <div style={{ maxWidth: '360px', marginBottom: '32px' }}>
+                <div style={{ marginBottom: '32px' }}>
                     <UploadSection onUploadSuccess={handleUploadSuccess} />
                 </div>
 
