@@ -69,6 +69,9 @@ export default function Home() {
                 >
                     Upload, manage, and share your images. <br />
                     A simple and elegant hosting solution.
+                    <br />
+                    Used your projects you want to show to others.<br />
+                    Used Images for your projects.If you want Online Image Hosting.
                 </motion.p>
 
                 {/* CTA Button */}
