@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oillamp.inovoid.me/sitemap.xml
